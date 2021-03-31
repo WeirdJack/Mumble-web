@@ -14,7 +14,7 @@ function Translate(props) {
         
         baseURL: process.env.REACT_APP_API_SERVER_PRODUCTION,
         headers: {
-
+            "Access-Control-Allow-Origin": '*',
             "X-FunTranslations-Api-Secret": api_key
         }
     })

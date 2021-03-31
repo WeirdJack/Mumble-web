@@ -12,7 +12,7 @@ function Translate(props) {
     //const inputAndResultsMap = new Map();
     const axiosAuth = Axios.create({
         
-        baseURL: 'https://api.funtranslations.com/translate/',
+        url: 'https://api.funtranslations.com/translate/',
         headers: {
 
             "X-FunTranslations-Api-Secret": api_key

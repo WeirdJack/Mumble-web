@@ -12,8 +12,7 @@ function Translate(props) {
     //const inputAndResultsMap = new Map();
     const axiosAuth = Axios.create({
         
-        baseURL: process.env.MUMBLE_BASE_URL,
-        origin: 'https://api.funtranslations.com/translate/',
+        baseURL: process.env.REACT_APP_API_SERVER_PRODUCTION,
         headers: {
 
             "X-FunTranslations-Api-Secret": api_key

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import Axios from 'axios'
+import axios from 'axios'
 
 if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
   // development URL

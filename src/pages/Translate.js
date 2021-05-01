@@ -2,6 +2,8 @@ import Axios from 'axios'
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
 import TranslateForm from '../components/TranslateForm'
+import express from 'express'
+import cors from 'cors'
 
 function Translate(props) {
     const [translatedArray, setTranslate] = useState({key: null, value: null});
@@ -10,6 +12,10 @@ function Translate(props) {
     console.log(props);
     const { endpoint, api_key, title } = props;
     //const inputAndResultsMap = new Map();
+
+    const app = express();
+
+    app.use(cors);
     const axiosAuth = Axios.create({
         
         baseURL: process.env.REACT_APP_API_SERVER_PRODUCTION,

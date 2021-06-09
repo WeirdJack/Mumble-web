@@ -18,7 +18,7 @@ function Translate(props) {
     app.use(cors);
     const axiosAuth = Axios.create({
         
-        baseURL: process.env.REACT_APP_API_SERVER_PRODUCTION,
+        baseURL: "https://api.funtranslations.com/translate/",
         headers: {
             "Access-Control-Allow-Origin": '*',
             "X-FunTranslations-Api-Secret": api_key

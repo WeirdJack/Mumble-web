@@ -5,10 +5,10 @@ import axios from 'axios'
 
 if (!process.env.NODE_ENV || process.env.NODE_ENV === "development") {
   // development URL
-  axios.defaults.baseURL = `${process.env.REACT_APP_API_SERVER_DEVELOPMENT}/`;
+  axios.defaults.baseURL = "https://api.funtranslations.com/translate/";
 } else {
   // production URL
-  axios.defaults.baseURL = `${process.env.REACT_APP_API_SERVER_PRODUCTION}/`;
+  axios.defaults.baseURL = "https://api.funtranslations.com/translate/";
 }
 
 ReactDOM.render(
